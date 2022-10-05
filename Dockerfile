@@ -6,6 +6,7 @@ COPY package*.json ./
 
 ENV NODE_ENV production
 
+
 RUN npm install --only=production
 
 COPY . ./
