@@ -6,6 +6,7 @@ COPY package*.json ./
 
 ENV NODE_ENV production
 ENV HOST https://strapi.anthonysette.com
+ENV PORT 8080
 
 RUN npm install --only=production
 
