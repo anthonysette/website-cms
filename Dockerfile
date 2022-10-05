@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install --only=production
 
-RUN npm build
+RUN npm run build
 
 # TODO: Add this later for auto migrate
 # RUN npx sequelize db:migrate
