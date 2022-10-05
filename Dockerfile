@@ -10,9 +10,6 @@ RUN npm install --only=production
 
 RUN npm run build
 
-# TODO: Add this later for auto migrate
-# RUN npx sequelize db:migrate
-
 COPY . ./
 
 CMD [ "npm", "start" ]
