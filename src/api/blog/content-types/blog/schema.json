@@ -29,6 +29,14 @@
     },
     "releaseDate": {
       "type": "date"
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
