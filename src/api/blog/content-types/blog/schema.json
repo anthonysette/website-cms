@@ -13,13 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     },
     "body": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "seo": {
       "type": "component",
@@ -36,6 +40,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "blogs"
     }
   }
 }
