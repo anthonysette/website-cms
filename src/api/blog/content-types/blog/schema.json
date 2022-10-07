@@ -12,14 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Slug": {
-      "type": "uid",
-      "targetField": "Title"
+    "slug": {
+      "type": "uid"
     },
-    "Body": {
+    "body": {
       "type": "richtext"
     },
     "seo": {
@@ -30,13 +29,13 @@
     "releaseDate": {
       "type": "date"
     },
-    "Thumbnail": {
-      "allowedTypes": [
-        "images"
-      ],
+    "thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
